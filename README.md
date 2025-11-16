@@ -21,39 +21,35 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Learning ScanSehat-Web
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+📦 Teknologi Utama
+Teknologi	Fungsi
+Laravel 12.x	Framework backend (routing, controller, model, Blade)
+Vite 7.x	Frontend build tool (hot reload, bundling)
+TailwindCSS 3.x	Utility-first CSS framework
+Node.js + NPM	Menjalankan Vite & dependency frontend
+Laravel Vite Plugin 2.x	Integrasi Laravel ↔ Vite
+### Tim tidak wajib menggunakan Laragon, XAMPP, WAMP, MAMP, atau setup manual PHP+MySQL juga bisa.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Cara clone & setup project
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Clone repo
+git clone https://github.com/username/ScanSehat-Web.git
+cd ScanSehat-Web
+### Install dependencies PHP & Node
+composer install
+npm install
+### Sesuaikan konfigurasi database di .env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=scansehat
+DB_USERNAME=root
+DB_PASSWORD=
+### Generate application key Laravel
+php artisan key:generate
+### Jalankan migration untuk membuat tabel
+php artisan migrate
+### Cara jalankan server
+npm run dev (Automatis menjalankan Front End Vite(npm run dev) + Back End Laravel(php artisan serve))
