@@ -21,6 +21,29 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+
+        // ======================
+        // INFORMASI DASAR
+        // ======================
+        'tanggal_lahir',
+        'jenis_kelamin',
+        'tinggi',
+        'berat',
+
+        // ======================
+        // DATA KESEHATAN
+        // ======================
+        'kondisi_kesehatan',
+        'alergi_makanan',
+        'alergi_detail',
+        'makanan_biasa',
+        'deskripsi_kesehatan',
+
+        // ======================
+        // PREFERENSI NUTRISI
+        // ======================
+        'jenis_diet',
+        'tujuan_diet',
     ];
 
     /**

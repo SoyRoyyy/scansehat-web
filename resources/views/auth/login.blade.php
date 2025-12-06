@@ -9,15 +9,19 @@
 </head>
 <body class="h-screen overflow-hidden grid grid-cols-1 md:grid-cols-2">
 
-    <!-- LEFT SIDE BACKGROUND + LOGO -->
-    <div class="relative hidden md:flex items-center justify-center p-8 md:p-10 bg-gradient-to-br from-[#b7c4b2] to-[#8d9b92] min-h-0">
+    <!-- LEFT SIDE BACKGROUND + LOGO --> 
+    <div class="relative hidden md:flex items-center justify-center p-8 md:p-10 
+    bg-gradient-to-br from-[#c8d3c1] to-[#9aa89f] min-h-0">
         <div class="text-center text-gray-200">
-            <img src="{{ asset('storage/ScanSehatLogo.png') }}" alt="ScanSehat Logo" class="w-64 md:w-72 mx-auto max-h-[70vh] object-contain" />
+            <img src="{{ asset('images/logo_login.png') }}" 
+                alt="Login Logo" 
+                class="w-64 md:w-72 mx-auto max-h-[70vh] object-contain" />
         </div>
     </div>
 
+
     <!-- RIGHT SIDE - LOGIN FORM -->
-    <div class="flex flex-col justify-center px-6 py-8 md:px-10 md:py-16 bg-[#6d7a72]/30 backdrop-blur-sm min-h-0">
+    <div class="flex flex-col justify-center px-6 py-8 md:px-10 md:py-16 bg-[#7c8a85]/100 backdrop-blur-sm min-h-0">
         <div class="w-full max-w-xl mx-auto">
             <h1 class="text-2xl md:text-3xl font-bold text-white leading-tight">Halo!<br class="md:hidden">Selamat datang kembali<br class="hidden md:inline">di ScanSehat</h1>
             

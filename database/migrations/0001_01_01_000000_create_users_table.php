@@ -17,6 +17,30 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+
+            // =====================
+            // INFORMASI DASAR USER
+            // =====================
+            $table->date('tanggal_lahir')->nullable();
+            $table->string('jenis_kelamin')->nullable();
+            $table->integer('tinggi')->nullable();   // tinggi badan (cm)
+            $table->integer('berat')->nullable();    // berat badan (kg)
+
+            // =====================
+            // DATA KESEHATAN
+            // =====================
+            $table->string('kondisi_kesehatan')->nullable();
+            $table->string('alergi_makanan')->nullable();
+            $table->string('alergi_detail')->nullable();
+            $table->string('makanan_biasa')->nullable();
+            $table->text('deskripsi_kesehatan')->nullable();
+
+            // =====================
+            // DATA NUTRISI (Final)
+            // =====================
+            $table->string('jenis_diet')->nullable();
+            $table->string('tujuan_diet')->nullable();
+
             $table->rememberToken();
             $table->timestamps();
         });
